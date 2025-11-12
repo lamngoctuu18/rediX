@@ -67,6 +67,7 @@ const RentStartPage: React.FC = () => {
   const state = location.state as { selectedStationId?: string; fromDashboard?: boolean } | null;
   
   const [selectedStation, setSelectedStation] = useState<string>('');
+  const [selectedDestinationStation, setSelectedDestinationStation] = useState<string>(''); // New state for turn-based destination
   const [selectedPricing, setSelectedPricing] = useState<PricingType>('hourly');
   const [selectedHours, setSelectedHours] = useState(1);
   const [selectedDays, setSelectedDays] = useState(1);
@@ -78,11 +79,17 @@ const RentStartPage: React.FC = () => {
   const [rentalCode, setRentalCode] = useState('');
   const [invoiceId, setInvoiceId] = useState('');
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [searchDestination, setSearchDestination] = useState(''); // New state for searching destination stations
 
   // Get station details
   const stationDetails = useMemo(() => {
     return stationsData.stations.find(s => s.id === selectedStation) as Station | undefined;
   }, [selectedStation]);
+
+  // Get destination station details (for turn-based pricing)
+  const destinationStationDetails = useMemo(() => {
+    return stationsData.stations.find(s => s.id === selectedDestinationStation) as Station | undefined;
+  }, [selectedDestinationStation]);
 
   // Auto-select station if coming from dashboard
   useEffect(() => {
@@ -113,6 +120,11 @@ const RentStartPage: React.FC = () => {
   const handleStartRental = () => {
     if (!selectedStation) {
       alert('Vui lòng chọn trạm xe');
+      return;
+    }
+    // For turn-based pricing, require destination station
+    if (selectedPricing === 'turn' && !selectedDestinationStation) {
+      alert('Vui lòng chọn trạm đến cho vé lượt');
       return;
     }
     setShowConfirmModal(true);
@@ -362,6 +374,150 @@ const RentStartPage: React.FC = () => {
             </div>
           </Card>
 
+          {/* Destination Station Selection - Only for Turn Pricing */}
+          {selectedPricing === 'turn' && (
+            <Card>
+              <div className="space-y-5">
+                {/* Header */}
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-gradient-to-br from-primary to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg text-lg">
+                    2
+                  </div>
+                  <div className="flex-1">
+                    <h2 className="text-h2 text-primary font-bold mb-0.5">
+                      Chọn trạm đến
+                    </h2>
+                    <p className="text-caption text-text-secondary">
+                      Vui lòng chọn trạm đến để hoàn thành lượt đi của bạn
+                    </p>
+                  </div>
+                </div>
+
+                {/* Search Input */}
+                <div className="relative group">
+                  <div className="absolute inset-y-0 left-3.5 flex items-center pointer-events-none z-10">
+                    <Icon name="search" size={18} className="text-primary/60 group-focus-within:text-primary transition-colors" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Tìm trạm theo tên hoặc địa chỉ..."
+                    value={searchDestination}
+                    onChange={(e) => setSearchDestination(e.target.value)}
+                    className="w-full pl-11 pr-11 py-3 bg-gradient-to-r from-primary/5 to-emerald-50/50 border-2 border-primary/20 rounded-xl focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 transition-all text-body placeholder:text-text-secondary/60"
+                  />
+                  {searchDestination && (
+                    <button
+                      onClick={() => setSearchDestination('')}
+                      className="absolute inset-y-0 right-2.5 flex items-center text-text-secondary hover:text-primary transition-all hover:scale-110"
+                    >
+                      <div className="w-7 h-7 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center">
+                        <Icon name="x" size={16} />
+                      </div>
+                    </button>
+                  )}
+                </div>
+
+                {/* Stations List */}
+                <div className="space-y-2.5 max-h-[450px] overflow-y-auto pr-1 py-1 scrollbar-thin scrollbar-thumb-primary/20 scrollbar-track-transparent hover:scrollbar-thumb-primary/30">
+                  {stationsData.stations
+                    .filter(station => station.id !== selectedStation) // Exclude current station
+                    .filter(station => {
+                      // Filter by search term
+                      if (!searchDestination) return true;
+                      const searchLower = searchDestination.toLowerCase();
+                      return (
+                        station.name.toLowerCase().includes(searchLower) ||
+                        station.address.toLowerCase().includes(searchLower)
+                      );
+                    })
+                    .length === 0 ? (
+                      // No results message
+                      <div className="text-center py-12">
+                        <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-emerald-50 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
+                          <Icon name="search" size={32} className="text-primary/40" />
+                        </div>
+                        <h4 className="text-h3 font-bold text-primary mb-1.5">
+                          Không tìm thấy trạm
+                        </h4>
+                        <p className="text-body text-text-secondary">
+                          Thử tìm kiếm với từ khóa khác
+                        </p>
+                      </div>
+                    ) : (
+                      stationsData.stations
+                        .filter(station => station.id !== selectedStation) // Exclude current station
+                        .filter(station => {
+                          // Filter by search term
+                          if (!searchDestination) return true;
+                          const searchLower = searchDestination.toLowerCase();
+                          return (
+                            station.name.toLowerCase().includes(searchLower) ||
+                            station.address.toLowerCase().includes(searchLower)
+                          );
+                        })
+                        .map((station) => {
+                      const isSelected = selectedDestinationStation === station.id;
+                      return (
+                        <div
+                          key={station.id}
+                          onClick={() => setSelectedDestinationStation(station.id)}
+                          className={`group relative p-4 border-2 rounded-xl cursor-pointer transition-all duration-300 overflow-visible ${
+                            isSelected
+                              ? 'border-primary bg-gradient-to-br from-primary/10 via-emerald-50/50 to-primary/5 shadow-lg ring-2 ring-primary/20'
+                              : 'border-primary/10 bg-white hover:border-primary/40 hover:shadow-md hover:bg-gradient-to-br hover:from-primary/5 hover:to-emerald-50/30'
+                          }`}
+                        >
+                          {/* Selection indicator */}
+                          {isSelected && (
+                            <div className="absolute -top-1.5 -right-1.5 w-6 h-6 bg-gradient-to-br from-primary to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
+                              <Icon name="check" size={14} className="text-white" />
+                            </div>
+                          )}
+                          
+                          <div className="flex items-center gap-3">
+                            {/* Station icon */}
+                            <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-all ${
+                              isSelected 
+                                ? 'bg-gradient-to-br from-primary to-emerald-600 shadow-md' 
+                                : 'bg-primary/10 group-hover:bg-primary/20'
+                            }`}>
+                              <Icon name="location" size={20} className={isSelected ? 'text-white' : 'text-primary'} />
+                            </div>
+
+                            {/* Station info */}
+                            <div className="flex-1 min-w-0">
+                              <h4 className={`text-body-lg font-bold mb-1 truncate transition-colors ${
+                                isSelected ? 'text-primary' : 'text-text-primary group-hover:text-primary'
+                              }`}>
+                                {station.name}
+                              </h4>
+                              <p className="text-caption text-text-secondary flex items-center gap-1 truncate">
+                                <Icon name="map" size={13} className="flex-shrink-0" />
+                                <span>{station.address}</span>
+                              </p>
+                            </div>
+
+                            {/* Distance badge */}
+                            <div className="flex items-center gap-2 flex-shrink-0">
+                              <div className={`px-2.5 py-1.5 rounded-lg font-semibold text-sm flex items-center gap-1.5 transition-all ${
+                                isSelected 
+                                  ? 'bg-gradient-to-r from-primary to-emerald-600 text-white shadow-md' 
+                                  : 'bg-gradient-to-r from-blue-500 to-blue-600 text-white group-hover:shadow-sm'
+                              }`}>
+                                <Icon name="navigation" size={13} />
+                                <span>{station.distance} km</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })
+                  )}
+                </div>
+              </div>
+            </Card>
+          )}
+
           {/* Duration Selection */}
           {(selectedPricing === 'hourly' || selectedPricing === 'daily') && (
             <Card>
@@ -436,6 +592,12 @@ const RentStartPage: React.FC = () => {
                   <span className="text-body text-text-secondary">Trạm thuê:</span>
                   <span className="text-body font-semibold text-primary">{stationDetails.name}</span>
                 </div>
+                {selectedPricing === 'turn' && selectedDestinationStation && (
+                  <div className="flex justify-between items-center">
+                    <span className="text-body text-text-secondary">Trạm đến:</span>
+                    <span className="text-body font-semibold text-primary">{destinationStationDetails?.name}</span>
+                  </div>
+                )}
                 <div className="flex justify-between items-center">
                   <span className="text-body text-text-secondary">Gói thuê:</span>
                   <span className="text-body font-semibold text-primary">
@@ -508,6 +670,12 @@ const RentStartPage: React.FC = () => {
                   <span className="text-body text-text-secondary">Trạm:</span>
                   <span className="text-body font-semibold">{stationDetails.name}</span>
                 </div>
+                {selectedPricing === 'turn' && destinationStationDetails && (
+                  <div className="flex justify-between">
+                    <span className="text-body text-text-secondary">Trạm đến:</span>
+                    <span className="text-body font-semibold">{destinationStationDetails.name}</span>
+                  </div>
+                )}
                 <div className="flex justify-between">
                   <span className="text-body text-text-secondary">Gói:</span>
                   <span className="text-body font-semibold">
@@ -591,6 +759,18 @@ const RentStartPage: React.FC = () => {
                       <span className="text-body text-text-secondary">Địa chỉ:</span>
                       <span className="text-body font-medium text-right max-w-xs">{stationDetails.address}</span>
                     </div>
+                    {selectedPricing === 'turn' && destinationStationDetails && (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-body text-text-secondary">Trạm đến:</span>
+                          <span className="text-body font-semibold text-right max-w-xs">{destinationStationDetails.name}</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-body text-text-secondary">Địa chỉ đến:</span>
+                          <span className="text-body font-medium text-right max-w-xs">{destinationStationDetails.address}</span>
+                        </div>
+                      </>
+                    )}
                     <div className="flex justify-between">
                       <span className="text-body text-text-secondary">Gói thuê:</span>
                       <span className="text-body font-semibold">{RENTAL_PRICING.find(p => p.type === selectedPricing)?.label}</span>

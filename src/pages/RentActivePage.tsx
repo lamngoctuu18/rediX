@@ -117,9 +117,6 @@ const RentActivePage: React.FC = () => {
               <p className="text-2xl font-bold text-primary">
                 Vé lượt
               </p>
-              <p className="text-body text-text-secondary mt-2">
-                Không giới hạn thời gian trong ngày
-              </p>
             </div>
           )}
 

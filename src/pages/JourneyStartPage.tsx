@@ -123,9 +123,6 @@ const JourneyStartPage: React.FC = () => {
                   Vé lượt
                 </p>
               </div>
-              <p className="text-body text-text-secondary mt-2">
-                Không giới hạn thời gian trong ngày
-              </p>
             </div>
           )}
 
