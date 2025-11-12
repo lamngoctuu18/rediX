@@ -211,6 +211,7 @@ const RentStartPage: React.FC = () => {
             {/* Google Map */}
             <div className="rounded-xl overflow-hidden border-2 border-white shadow-lg">
               <iframe
+                title="Bản đồ trạm xe"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
