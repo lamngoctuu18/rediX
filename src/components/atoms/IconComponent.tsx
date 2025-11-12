@@ -116,6 +116,8 @@ import {
   Instagram,
   Sparkles,
   Ticket,
+  Leaf,
+  Cpu,
   Zap as Bolt,
   type LucideIcon,
 } from 'lucide-react';
@@ -280,12 +282,16 @@ const iconMap: Record<string, LucideIcon> = {
   'cloud-off': CloudOff,
   sun: Sun,
   moon: Moon,
+  leaf: Leaf,
   
   // Connectivity
   wifi: Wifi,
   'wifi-off': WifiOff,
   volume: Volume2,
   'volume-off': VolumeX,
+  
+  // Technology
+  cpu: Cpu,
   
   // Social Media
   facebook: Facebook,

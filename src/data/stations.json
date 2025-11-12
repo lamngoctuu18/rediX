@@ -2,11 +2,11 @@
   "stations": [
     {
       "id": "1",
-      "name": "Trạm Đại học Bách Khoa",
-      "address": "268 Lý Thường Kiệt, Phường 14, Quận 10, TP.HCM",
+      "name": "Trạm Hồ Hoàn Kiếm",
+      "address": "Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
       "location": {
-        "lat": 10.772461,
-        "lng": 106.657223
+        "lat": 21.0285,
+        "lng": 105.8542
       },
       "distance": 0.5,
       "totalBikes": 15,
@@ -18,10 +18,10 @@
       "rating": 4.8,
       "reviews": 1243,
       "image": "/images/stations/station-1.jpg",
-      "description": "Trạm thuê xe gần Đại học Bách Khoa, phục vụ sinh viên và người dân xung quanh",
+      "description": "Trạm thuê xe gần Hồ Hoàn Kiếm, trung tâm Hà Nội",
       "contact": {
-        "phone": "028-1234-5678",
-        "email": "bk-station@ridex.vn"
+        "phone": "024-1234-5678",
+        "email": "hoankiem-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -32,11 +32,11 @@
     },
     {
       "id": "2",
-      "name": "Trạm Công viên Lê Văn Tám",
-      "address": "202 Điện Biên Phủ, Phường 17, Bình Thạnh, TP.HCM",
+      "name": "Trạm Phố Cổ Hà Nội",
+      "address": "Hàng Bạc, Hoàn Kiếm, Hà Nội",
       "location": {
-        "lat": 10.802838,
-        "lng": 106.693141
+        "lat": 21.0348,
+        "lng": 105.8492
       },
       "distance": 0.8,
       "totalBikes": 20,
@@ -48,10 +48,10 @@
       "rating": 4.7,
       "reviews": 987,
       "image": "/images/stations/station-2.jpg",
-      "description": "Trạm thuê xe tại công viên Lê Văn Tám, lý tưởng cho hoạt động thể thao và giải trí",
+      "description": "Trạm thuê xe tại Phố Cổ, khám phá văn hóa Hà Nội",
       "contact": {
-        "phone": "028-2345-6789",
-        "email": "lvt-station@ridex.vn"
+        "phone": "024-2345-6789",
+        "email": "phoco-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -62,11 +62,11 @@
     },
     {
       "id": "3",
-      "name": "Trạm Metro Saigon Center",
-      "address": "65 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Nhà Hát Lớn Hà Nội",
+      "address": "1 Tràng Tiền, Hoàn Kiếm, Hà Nội",
       "location": {
-        "lat": 10.774586,
-        "lng": 106.700806
+        "lat": 21.0239,
+        "lng": 105.8565
       },
       "distance": 1.2,
       "totalBikes": 25,
@@ -78,10 +78,10 @@
       "rating": 4.9,
       "reviews": 2156,
       "image": "/images/stations/station-3.jpg",
-      "description": "Trạm thuê xe cao cấp tại trung tâm Sài Gòn, kết nối với hệ thống Metro",
+      "description": "Trạm thuê xe cao cấp tại Nhà Hát Lớn, trung tâm văn hóa Hà Nội",
       "contact": {
-        "phone": "028-3456-7890",
-        "email": "metro-station@ridex.vn"
+        "phone": "024-3456-7890",
+        "email": "opera-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -92,11 +92,11 @@
     },
     {
       "id": "4",
-      "name": "Trạm Phố đi bộ Nguyễn Huệ",
-      "address": "Nguyễn Huệ, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Chợ Đồng Xuân",
+      "address": "Đồng Xuân, Hoàn Kiếm, Hà Nội",
       "location": {
-        "lat": 10.774022,
-        "lng": 106.703854
+        "lat": 21.0369,
+        "lng": 105.8478
       },
       "distance": 1.5,
       "totalBikes": 30,
@@ -108,10 +108,10 @@
       "rating": 4.8,
       "reviews": 1876,
       "image": "/images/stations/station-4.jpg",
-      "description": "Trạm thuê xe tại phố đi bộ Nguyễn Huệ, điểm đến du lịch nổi tiếng",
+      "description": "Trạm thuê xe tại chợ Đồng Xuân, khu mua sắm sầm uất",
       "contact": {
-        "phone": "028-4567-8901",
-        "email": "nh-station@ridex.vn"
+        "phone": "024-4567-8901",
+        "email": "dongxuan-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -122,11 +122,11 @@
     },
     {
       "id": "5",
-      "name": "Trạm Bến Thành Market",
-      "address": "Lê Lợi, Phường Bến Thành, Quận 1, TP.HCM",
+      "name": "Trạm Văn Miếu - Quốc Tử Giám",
+      "address": "58 Quốc Tử Giám, Đống Đa, Hà Nội",
       "location": {
-        "lat": 10.772524,
-        "lng": 106.698157
+        "lat": 21.0277,
+        "lng": 105.8355
       },
       "distance": 1.8,
       "totalBikes": 18,
@@ -138,10 +138,10 @@
       "rating": 4.6,
       "reviews": 1432,
       "image": "/images/stations/station-5.jpg",
-      "description": "Trạm thuê xe gần chợ Bến Thành, thuận tiện mua sắm và tham quan",
+      "description": "Trạm thuê xe gần Văn Miếu, di tích lịch sử nổi tiếng",
       "contact": {
-        "phone": "028-5678-9012",
-        "email": "bt-station@ridex.vn"
+        "phone": "024-5678-9012",
+        "email": "vanmieu-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -152,11 +152,11 @@
     },
     {
       "id": "6",
-      "name": "Trạm Đại học Khoa học Tự nhiên",
-      "address": "227 Nguyễn Văn Cừ, Phường 4, Quận 5, TP.HCM",
+      "name": "Trạm Đại học Quốc Gia Hà Nội",
+      "address": "144 Xuân Thủy, Cầu Giấy, Hà Nội",
       "location": {
-        "lat": 10.762775,
-        "lng": 106.682454
+        "lat": 21.0378,
+        "lng": 105.7826
       },
       "distance": 2.1,
       "totalBikes": 22,
@@ -168,10 +168,10 @@
       "rating": 4.7,
       "reviews": 892,
       "image": "/images/stations/station-6.jpg",
-      "description": "Trạm thuê xe tại Đại học Khoa học Tự nhiên, phục vụ cộng đồng sinh viên",
+      "description": "Trạm thuê xe tại Đại học Quốc Gia, phục vụ cộng đồng sinh viên",
       "contact": {
-        "phone": "028-6789-0123",
-        "email": "khtn-station@ridex.vn"
+        "phone": "024-6789-0123",
+        "email": "dhqg-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -182,11 +182,11 @@
     },
     {
       "id": "7",
-      "name": "Trạm Công viên Tao Đàn",
-      "address": "Trương Định, Phường Bến Thành, Quận 1, TP.HCM",
+      "name": "Trạm Công viên Thống Nhất",
+      "address": "Lê Duẩn, Đống Đa, Hà Nội",
       "location": {
-        "lat": 10.779395,
-        "lng": 106.693324
+        "lat": 21.0138,
+        "lng": 105.8415
       },
       "distance": 2.3,
       "totalBikes": 16,
@@ -198,10 +198,10 @@
       "rating": 4.8,
       "reviews": 1098,
       "image": "/images/stations/station-7.jpg",
-      "description": "Trạm thuê xe tại công viên Tao Đàn, không gian xanh giữa lòng thành phố",
+      "description": "Trạm thuê xe tại công viên Thống Nhất, không gian xanh rộng lớn",
       "contact": {
-        "phone": "028-7890-1234",
-        "email": "td-station@ridex.vn"
+        "phone": "024-7890-1234",
+        "email": "thongnhat-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -212,11 +212,11 @@
     },
     {
       "id": "8",
-      "name": "Trạm Bitexco Financial Tower",
-      "address": "2 Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Lotte Center Hanoi",
+      "address": "54 Liễu Giai, Ba Đình, Hà Nội",
       "location": {
-        "lat": 10.771685,
-        "lng": 106.704353
+        "lat": 21.0168,
+        "lng": 105.8179
       },
       "distance": 2.5,
       "totalBikes": 20,
@@ -228,10 +228,10 @@
       "rating": 4.9,
       "reviews": 2543,
       "image": "/images/stations/station-8.jpg",
-      "description": "Trạm thuê xe cao cấp tại tòa nhà Bitexco, phục vụ doanh nhân và khách du lịch",
+      "description": "Trạm thuê xe cao cấp tại Lotte Center, phục vụ doanh nhân",
       "contact": {
-        "phone": "028-8901-2345",
-        "email": "bitexco-station@ridex.vn"
+        "phone": "024-8901-2345",
+        "email": "lotte-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -242,11 +242,11 @@
     },
     {
       "id": "9",
-      "name": "Trạm Phú Mỹ Hưng",
-      "address": "Nguyễn Văn Linh, Phường Tân Phú, Quận 7, TP.HCM",
+      "name": "Trạm Times City",
+      "address": "458 Minh Khai, Hai Bà Trưng, Hà Nội",
       "location": {
-        "lat": 10.729263,
-        "lng": 106.719477
+        "lat": 20.9959,
+        "lng": 105.8678
       },
       "distance": 3.2,
       "totalBikes": 28,
@@ -258,10 +258,10 @@
       "rating": 4.8,
       "reviews": 1654,
       "image": "/images/stations/station-9.jpg",
-      "description": "Trạm thuê xe tại khu đô thị Phú Mỹ Hưng, tiện ích đầy đủ",
+      "description": "Trạm thuê xe tại Times City, khu đô thị hiện đại",
       "contact": {
-        "phone": "028-9012-3456",
-        "email": "pmh-station@ridex.vn"
+        "phone": "024-9012-3456",
+        "email": "timescity-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -272,11 +272,11 @@
     },
     {
       "id": "10",
-      "name": "Trạm Vincom Center",
-      "address": "72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Vincom Mega Mall Royal City",
+      "address": "72A Nguyễn Trãi, Thanh Xuân, Hà Nội",
       "location": {
-        "lat": 10.776765,
-        "lng": 106.701483
+        "lat": 21.0016,
+        "lng": 105.8111
       },
       "distance": 1.0,
       "totalBikes": 24,
@@ -288,10 +288,10 @@
       "rating": 4.7,
       "reviews": 1789,
       "image": "/images/stations/station-10.jpg",
-      "description": "Trạm thuê xe tại Vincom Center, kết nối trung tâm mua sắm",
+      "description": "Trạm thuê xe tại Royal City, trung tâm mua sắm lớn",
       "contact": {
-        "phone": "028-0123-4567",
-        "email": "vincom-station@ridex.vn"
+        "phone": "024-0123-4567",
+        "email": "royalcity-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -302,26 +302,26 @@
     },
     {
       "id": "11",
-      "name": "Trạm Nhà hát Thành phố",
-      "address": "7 Công Trường Lam Sơn, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Hồ Tây",
+      "address": "Đường Thanh Niên, Tây Hồ, Hà Nội",
       "location": {
-        "lat": 10.777128,
-        "lng": 106.702732
+        "lat": 21.0545,
+        "lng": 105.8207
       },
-      "distance": 1.3,
-      "totalBikes": 19,
-      "availableBikes": 7,
-      "batteryAvg": 70,
-      "facilities": ["parking", "charging", "wifi"],
-      "workingHours": "06:00 - 23:00",
+      "distance": 2.8,
+      "totalBikes": 26,
+      "availableBikes": 16,
+      "batteryAvg": 84,
+      "facilities": ["parking", "repair", "charging", "cafe", "wifi"],
+      "workingHours": "05:00 - 23:00",
       "status": "active",
-      "rating": 4.6,
-      "reviews": 923,
+      "rating": 4.9,
+      "reviews": 2234,
       "image": "/images/stations/station-11.jpg",
-      "description": "Trạm thuê xe gần Nhà hát Thành phố, điểm văn hóa nổi tiếng",
+      "description": "Trạm thuê xe ven Hồ Tây, cảnh quan đẹp",
       "contact": {
-        "phone": "028-1234-6789",
-        "email": "theater-station@ridex.vn"
+        "phone": "024-1234-6789",
+        "email": "hotay-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -332,26 +332,26 @@
     },
     {
       "id": "12",
-      "name": "Trạm Đại học Y Dược",
-      "address": "217 Hồng Bàng, Phường 11, Quận 5, TP.HCM",
+      "name": "Trạm Bảo tàng Hồ Chí Minh",
+      "address": "19 Ngọc Hà, Ba Đình, Hà Nội",
       "location": {
-        "lat": 10.754238,
-        "lng": 106.657738
+        "lat": 21.0359,
+        "lng": 105.8335
       },
-      "distance": 2.8,
-      "totalBikes": 21,
-      "availableBikes": 13,
-      "batteryAvg": 77,
-      "facilities": ["parking", "repair", "charging", "restroom", "wifi"],
-      "workingHours": "05:00 - 23:00",
+      "distance": 3.5,
+      "totalBikes": 14,
+      "availableBikes": 7,
+      "batteryAvg": 70,
+      "facilities": ["parking", "charging", "wifi"],
+      "workingHours": "05:30 - 22:30",
       "status": "active",
-      "rating": 4.7,
-      "reviews": 1134,
+      "rating": 4.6,
+      "reviews": 876,
       "image": "/images/stations/station-12.jpg",
-      "description": "Trạm thuê xe tại Đại học Y Dược, phục vụ sinh viên và nhân viên y tế",
+      "description": "Trạm thuê xe gần Bảo tàng Hồ Chí Minh, khu di tích lịch sử",
       "contact": {
-        "phone": "028-2345-7890",
-        "email": "yd-station@ridex.vn"
+        "phone": "024-2345-7890",
+        "email": "museum-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -361,27 +361,27 @@
       }
     },
     {
-      "id": "13",
-      "name": "Trạm Landmark 81",
-      "address": "720A Điện Biên Phủ, Phường 22, Bình Thạnh, TP.HCM",
+      "id": "15",
+      "name": "Trạm Keangnam Landmark 72",
+      "address": "Phạm Hùng, Nam Từ Liêm, Hà Nội",
       "location": {
-        "lat": 10.794631,
-        "lng": 106.721891
+        "lat": 21.0165,
+        "lng": 105.7840
       },
-      "distance": 3.5,
-      "totalBikes": 32,
-      "availableBikes": 20,
-      "batteryAvg": 90,
-      "facilities": ["parking", "repair", "charging", "security", "cafe", "restroom", "wifi", "locker"],
+      "distance": 2.9,
+      "totalBikes": 23,
+      "availableBikes": 15,
+      "batteryAvg": 81,
+      "facilities": ["parking", "charging", "security", "atm", "wifi", "cafe"],
       "workingHours": "24/7",
       "status": "active",
-      "rating": 5.0,
-      "reviews": 3421,
-      "image": "/images/stations/station-13.jpg",
-      "description": "Trạm thuê xe cao cấp nhất tại Landmark 81, dịch vụ 5 sao",
+      "rating": 4.9,
+      "reviews": 1923,
+      "image": "/images/stations/station-15.jpg",
+      "description": "Trạm thuê xe tại Keangnam, tòa nhà cao nhất Hà Nội",
       "contact": {
-        "phone": "028-3456-8901",
-        "email": "landmark-station@ridex.vn"
+        "phone": "024-5678-0123",
+        "email": "keangnam-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -395,8 +395,8 @@
       "name": "Trạm Công viên Gia Định",
       "address": "Hoàng Minh Giám, Phường 9, Phú Nhuận, TP.HCM",
       "location": {
-        "lat": 10.799311,
-        "lng": 106.673739
+        "lat": 10.7993,
+        "lng": 106.6737
       },
       "distance": 2.6,
       "totalBikes": 17,
@@ -425,8 +425,8 @@
       "name": "Trạm Chợ Tân Định",
       "address": "Hai Bà Trưng, Phường Tân Định, Quận 1, TP.HCM",
       "location": {
-        "lat": 10.788763,
-        "lng": 106.690981
+        "lat": 10.7888,
+        "lng": 106.6910
       },
       "distance": 1.9,
       "totalBikes": 14,
@@ -452,26 +452,26 @@
     },
     {
       "id": "16",
-      "name": "Trạm Crescent Mall",
-      "address": "101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, TP.HCM",
+      "name": "Trạm Vincom Bà Triệu",
+      "address": "191 Bà Triệu, Hai Bà Trưng, Hà Nội",
       "location": {
-        "lat": 10.729847,
-        "lng": 106.702893
+        "lat": 21.0111,
+        "lng": 105.8492
       },
-      "distance": 4.1,
-      "totalBikes": 26,
-      "availableBikes": 16,
-      "batteryAvg": 83,
-      "facilities": ["parking", "charging", "security", "cafe", "wifi", "vending"],
+      "distance": 3.1,
+      "totalBikes": 27,
+      "availableBikes": 17,
+      "batteryAvg": 77,
+      "facilities": ["parking", "repair", "charging", "restroom", "wifi", "cafe"],
       "workingHours": "06:00 - 24:00",
       "status": "active",
-      "rating": 4.8,
-      "reviews": 1987,
+      "rating": 4.7,
+      "reviews": 1456,
       "image": "/images/stations/station-16.jpg",
-      "description": "Trạm thuê xe tại Crescent Mall, kết nối trung tâm thương mại lớn",
+      "description": "Trạm thuê xe tại Vincom Bà Triệu, mua sắm tiện lợi",
       "contact": {
-        "phone": "028-6789-1234",
-        "email": "crescent-station@ridex.vn"
+        "phone": "024-6789-1234",
+        "email": "batrieu-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -482,26 +482,26 @@
     },
     {
       "id": "17",
-      "name": "Trạm Bệnh viện Chợ Rẫy",
-      "address": "201B Nguyễn Chí Thanh, Phường 12, Quận 5, TP.HCM",
+      "name": "Trạm Bệnh viện Bạch Mai",
+      "address": "78 Giải Phóng, Đống Đa, Hà Nội",
       "location": {
-        "lat": 10.755391,
-        "lng": 106.665237
+        "lat": 20.9985,
+        "lng": 105.8435
       },
-      "distance": 2.4,
-      "totalBikes": 15,
-      "availableBikes": 6,
-      "batteryAvg": 71,
-      "facilities": ["parking", "charging", "restroom", "wifi"],
+      "distance": 3.6,
+      "totalBikes": 17,
+      "availableBikes": 8,
+      "batteryAvg": 69,
+      "facilities": ["parking", "charging", "wifi"],
       "workingHours": "24/7",
       "status": "active",
-      "rating": 4.6,
-      "reviews": 845,
+      "rating": 4.5,
+      "reviews": 945,
       "image": "/images/stations/station-17.jpg",
-      "description": "Trạm thuê xe tại bệnh viện Chợ Rẫy, phục vụ bệnh nhân và thân nhân",
+      "description": "Trạm thuê xe gần Bệnh viện Bạch Mai, phục vụ bệnh nhân",
       "contact": {
-        "phone": "028-7890-2345",
-        "email": "choray-station@ridex.vn"
+        "phone": "024-7890-2345",
+        "email": "bachmai-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -512,26 +512,26 @@
     },
     {
       "id": "18",
-      "name": "Trạm Đầm Sen",
-      "address": "3 Hòa Bình, Phường 3, Quận 11, TP.HCM",
+      "name": "Trạm Ga Hà Nội",
+      "address": "120 Lê Duẩn, Hoàn Kiếm, Hà Nội",
       "location": {
-        "lat": 10.768413,
-        "lng": 106.637583
+        "lat": 21.0236,
+        "lng": 105.8418
       },
-      "distance": 3.7,
-      "totalBikes": 23,
-      "availableBikes": 12,
-      "batteryAvg": 79,
-      "facilities": ["parking", "repair", "charging", "cafe", "restroom", "wifi"],
-      "workingHours": "05:00 - 22:00",
+      "distance": 4.0,
+      "totalBikes": 29,
+      "availableBikes": 19,
+      "batteryAvg": 86,
+      "facilities": ["parking", "repair", "charging", "security", "wifi", "locker"],
+      "workingHours": "24/7",
       "status": "active",
-      "rating": 4.7,
-      "reviews": 1456,
+      "rating": 4.8,
+      "reviews": 2098,
       "image": "/images/stations/station-18.jpg",
-      "description": "Trạm thuê xe tại công viên Đầm Sen, địa điểm vui chơi giải trí",
+      "description": "Trạm thuê xe tại Ga Hà Nội, kết nối đường sắt",
       "contact": {
-        "phone": "028-8901-3456",
-        "email": "damsen-station@ridex.vn"
+        "phone": "024-8901-3456",
+        "email": "trainstation-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -542,11 +542,11 @@
     },
     {
       "id": "19",
-      "name": "Trạm Đường sách Nguyễn Văn Bình",
-      "address": "Nguyễn Văn Bình, Phường Bến Nghé, Quận 1, TP.HCM",
+      "name": "Trạm Sân vận động Mỹ Đình",
+      "address": "Đường Lê Quang Đạo, Nam Từ Liêm, Hà Nội",
       "location": {
-        "lat": 10.780512,
-        "lng": 106.699347
+        "lat": 21.0283,
+        "lng": 105.7653
       },
       "distance": 1.4,
       "totalBikes": 16,
@@ -558,10 +558,10 @@
       "rating": 4.7,
       "reviews": 1123,
       "image": "/images/stations/station-19.jpg",
-      "description": "Trạm thuê xe tại đường sách, điểm đến cho người yêu văn hóa",
+      "description": "Trạm thuê xe tại Sân vận động Mỹ Đình, phục vụ sự kiện thể thao",
       "contact": {
-        "phone": "028-9012-4567",
-        "email": "bookstreet-station@ridex.vn"
+        "phone": "024-9012-4567",
+        "email": "mydinh-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -571,27 +571,27 @@
       }
     },
     {
-      "id": "20",
-      "name": "Trạm Thảo Cầm Viên",
-      "address": "2 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1, TP.HCM",
+      "id": "13",
+      "name": "Trạm Cầu Long Biên",
+      "address": "Ngọc Thụy, Long Biên, Hà Nội",
       "location": {
-        "lat": 10.787764,
-        "lng": 106.705356
+        "lat": 21.0457,
+        "lng": 105.8634
       },
-      "distance": 1.7,
+      "distance": 4.2,
       "totalBikes": 19,
-      "availableBikes": 11,
-      "batteryAvg": 81,
-      "facilities": ["parking", "charging", "cafe", "restroom", "wifi"],
-      "workingHours": "05:30 - 22:00",
+      "availableBikes": 12,
+      "batteryAvg": 73,
+      "facilities": ["parking", "charging", "security", "wifi"],
+      "workingHours": "24/7",
       "status": "active",
-      "rating": 4.8,
-      "reviews": 1543,
-      "image": "/images/stations/station-20.jpg",
-      "description": "Trạm thuê xe tại Thảo Cầm Viên, kết nối vườn thú và công viên",
+      "rating": 4.7,
+      "reviews": 1234,
+      "image": "/images/stations/station-13.jpg",
+      "description": "Trạm thuê xe gần Cầu Long Biên, di sản văn hóa",
       "contact": {
-        "phone": "028-0123-5678",
-        "email": "zoo-station@ridex.vn"
+        "phone": "024-3456-8901",
+        "email": "longbien-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
@@ -603,10 +603,10 @@
     {
       "id": "21",
       "name": "Trạm Trường Đại học Đại Nam",
-      "address": "Đường Hùng Vương, Phường Hiệp Thành, Thành phố Thủ Dầu Một, Bình Dương",
+      "address": "Số 1, Phú Lãm, Hà Đông, Hà Nội",
       "location": {
-        "lat": 10.980789,
-        "lng": 106.650124
+        "lat": 20.9720,
+        "lng": 105.7580
       },
       "distance": 4.5,
       "totalBikes": 25,
@@ -620,7 +620,7 @@
       "image": "/images/stations/station-21.jpg",
       "description": "Trạm thuê xe tại Đại học Đại Nam, phục vụ sinh viên và giảng viên",
       "contact": {
-        "phone": "028-1111-2222",
+        "phone": "024-1111-2222",
         "email": "dainam-station@ridex.vn"
       },
       "pricing": {
@@ -631,12 +631,12 @@
       }
     },
     {
-      "id": "22",
-      "name": "Trạm Ga Văn Khê",
-      "address": "Đường Tố Hữu, Phường Văn Khê, Quận Hà Đông, Hà Nội",
+      "id": "20",
+      "name": "Trạm Công viên Cầu Giấy",
+      "address": "Dương Đình Nghệ, Cầu Giấy, Hà Nội",
       "location": {
-        "lat": 20.976543,
-        "lng": 105.807321
+        "lat": 21.0333,
+        "lng": 105.7947
       },
       "distance": 5.2,
       "totalBikes": 30,
@@ -647,11 +647,11 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1234,
-      "image": "/images/stations/station-22.jpg",
-      "description": "Trạm thuê xe tại ga metro Văn Khê, kết nối giao thông công cộng hiện đại",
+      "image": "/images/stations/station-20.jpg",
+      "description": "Trạm thuê xe tại công viên Cầu Giấy, không gian xanh đẹp",
       "contact": {
-        "phone": "024-3333-4444",
-        "email": "vankhe-station@ridex.vn"
+        "phone": "024-0123-5678",
+        "email": "caugiay-station@ridex.vn"
       },
       "pricing": {
         "perTurn": 9000,
