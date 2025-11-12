@@ -663,12 +663,42 @@
         "perDay": 90000,
         "perMonth": 299000
       }
+    },
+    {
+      "id": "23",
+      "name": "Trạm Văn Khê Hà Đông",
+      "address": "Văn Khê, Hà Đông, Hà Nội",
+      "location": {
+        "lat": 20.9738,
+        "lng": 105.7503
+      },
+      "distance": 8.5,
+      "totalBikes": 18,
+      "availableBikes": 10,
+      "batteryAvg": 75,
+      "facilities": ["parking", "repair", "charging", "restroom", "wifi", "security"],
+      "workingHours": "05:00 - 23:00",
+      "status": "active",
+      "rating": 4.7,
+      "reviews": 856,
+      "images": ["/vankhe1.jpg", "/vankhe2.jpg", "/vankhe3.jpg"],
+      "description": "Trạm thuê xe tại khu đô thị Văn Khê, quận Hà Đông",
+      "contact": {
+        "phone": "024-0987-6543",
+        "email": "vankhe-station@ridex.vn"
+      },
+      "pricing": {
+        "perTurn": 9000,
+        "perHour": 19000,
+        "perDay": 90000,
+        "perMonth": 299000
+      }
     }
   ],
   "metadata": {
     "version": "1.0.0",
-    "lastUpdated": "2025-11-11T00:00:00Z",
-    "totalStations": 22,
+    "lastUpdated": "2025-11-12T00:00:00Z",
+    "totalStations": 23,
     "totalBikes": 479,
     "averageRating": 4.75,
     "currency": "VND",

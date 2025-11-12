@@ -54,7 +54,6 @@ const DashboardPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
-  const [stationImageIndexes, setStationImageIndexes] = useState<{[key: string]: number}>({});
 
   // Get all stations for search suggestions
   const allStations = stationsData.stations as Station[];

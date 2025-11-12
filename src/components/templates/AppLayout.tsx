@@ -12,13 +12,13 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const isAdmin = user?.segment === 'admin';
 
   return (
-    <div className="min-h-screen bg-white flex flex-col pb-16 md:pb-0">
+    <div className="min-h-screen bg-white flex flex-col pb-16 md:pb-0 overflow-x-hidden max-w-full">
       {/* Header - Desktop & Mobile */}
       <NavBar variant="header" />
 
       {/* Main Content */}
-      <main className="flex-1">
-        <div className="container mx-auto py-6">
+      <main className="flex-1 overflow-x-hidden w-full">
+        <div className="container mx-auto py-6 px-4">
           {children}
         </div>
       </main>

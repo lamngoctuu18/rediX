@@ -77,7 +77,7 @@ const RentStartPage: React.FC = () => {
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [rentalCode, setRentalCode] = useState('');
   const [invoiceId, setInvoiceId] = useState('');
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Get station details
   const stationDetails = useMemo(() => {
@@ -187,15 +187,25 @@ const RentStartPage: React.FC = () => {
             {stationDetails.images && stationDetails.images.length > 0 && (
               <div className="grid grid-cols-3 gap-2 rounded-xl overflow-hidden border-2 border-white shadow-lg">
                 {stationDetails.images.map((image, index) => (
-                  <div key={index} className="relative aspect-[4/3] overflow-hidden">
+                  <div 
+                    key={index} 
+                    className="relative aspect-[4/3] overflow-hidden cursor-pointer group"
+                    onClick={() => setSelectedImage(image)}
+                  >
                     <img 
                       src={image} 
                       alt={`${stationDetails.name} - Ảnh ${index + 1}`}
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       onError={(e) => {
                         e.currentTarget.src = 'https://via.placeholder.com/400x300/10b981/ffffff?text=Image+' + (index + 1);
                       }}
                     />
+                    {/* Zoom indicator */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                      <div className="w-10 h-10 bg-white/0 group-hover:bg-white/90 rounded-full flex items-center justify-center transition-all">
+                        <Icon name="search" size={20} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -725,6 +735,39 @@ const RentStartPage: React.FC = () => {
               )}
             </div>
           </Card>
+        </div>
+      )}
+
+      {/* Image Zoom Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-6xl w-full max-h-[90vh]">
+            {/* Close button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+            >
+              <Icon name="x" size={24} className="text-white" />
+            </button>
+            
+            {/* Image */}
+            <img 
+              src={selectedImage} 
+              alt="Station view"
+              className="w-full h-full object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+            
+            {/* Image caption */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 rounded-b-lg">
+              <p className="text-white text-center font-medium">
+                Click bên ngoài để đóng
+              </p>
+            </div>
+          </div>
         </div>
       )}
     </div>

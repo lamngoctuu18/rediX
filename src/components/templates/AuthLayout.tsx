@@ -6,9 +6,9 @@ interface AuthLayoutProps {
 
 const AuthLayout: React.FC<AuthLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-primary-8/20 to-white flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-white via-primary-8/20 to-white flex flex-col overflow-x-hidden max-w-full">
       {/* Main content */}
-      <main className="flex-1 flex items-center justify-center py-8 md:py-12">
+      <main className="flex-1 flex items-center justify-center py-8 md:py-12 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto">
             {children}

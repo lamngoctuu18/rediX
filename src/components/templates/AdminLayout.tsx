@@ -10,7 +10,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden max-w-full">
       <div className="flex">
         {/* Sidebar Navigation - Desktop */}
         <div className="hidden md:block">
@@ -18,14 +18,14 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col overflow-x-hidden w-full">
           {/* Header - Mobile */}
           <div className="md:hidden">
             <NavBar variant="header" />
           </div>
 
           {/* Admin Header */}
-          <div className="bg-primary-8 border-b border-primary-16 px-6 py-4">
+          <div className="bg-primary-8 border-b border-primary-16 px-4 md:px-6 py-4">
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-h2 text-primary font-semibold">
@@ -51,7 +51,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
           </div>
 
           {/* Content */}
-          <main className="flex-1 p-6">
+          <main className="flex-1 p-4 md:p-6 overflow-x-hidden w-full">
             {children}
           </main>
         </div>
