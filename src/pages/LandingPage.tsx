@@ -90,6 +90,15 @@ const LandingPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
         </div>
         
+        {/* Vietnam Flag Logo - Top Right Corner */}
+        <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
+          <img 
+            src="/VietNam-Photoroom.png" 
+            alt="Vietnam Flag" 
+            className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 border-2 border-white/50"
+          />
+        </div>
+        
         <div className="container mx-auto px-4 py-12 md:py-20 lg:py-24 relative min-h-screen flex items-center">
           <div className="max-w-6xl mx-auto w-full">
             {/* Logo & Slogan */}
