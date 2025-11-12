@@ -56,6 +56,9 @@ interface Station {
     perDay: number;
     perMonth: number;
   };
+  images?: string[];
+  rating?: number;
+  reviews?: number;
 }
 
 const RentStartPage: React.FC = () => {
@@ -74,6 +77,7 @@ const RentStartPage: React.FC = () => {
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [rentalCode, setRentalCode] = useState('');
   const [invoiceId, setInvoiceId] = useState('');
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Get station details
   const stationDetails = useMemo(() => {
@@ -179,6 +183,24 @@ const RentStartPage: React.FC = () => {
       {stationDetails && (
         <Card className="border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-emerald-50">
           <div className="space-y-4">
+            {/* Station Images Grid - Display all 3 images */}
+            {stationDetails.images && stationDetails.images.length > 0 && (
+              <div className="grid grid-cols-3 gap-2 rounded-xl overflow-hidden border-2 border-white shadow-lg">
+                {stationDetails.images.map((image, index) => (
+                  <div key={index} className="relative aspect-[4/3] overflow-hidden">
+                    <img 
+                      src={image} 
+                      alt={`${stationDetails.name} - Ảnh ${index + 1}`}
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      onError={(e) => {
+                        e.currentTarget.src = 'https://via.placeholder.com/400x300/10b981/ffffff?text=Image+' + (index + 1);
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 bg-gradient-to-br from-primary to-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Icon name="location" size={32} className="text-white" />
@@ -191,6 +213,22 @@ const RentStartPage: React.FC = () => {
                   <Icon name="map" size={16} />
                   {stationDetails.address}
                 </p>
+                
+                {/* Rating Display */}
+                {stationDetails.rating && stationDetails.reviews && (
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-1">
+                      <Icon name="star" size={18} className="text-yellow-500 fill-yellow-500" />
+                      <span className="text-body font-bold text-primary">
+                        {stationDetails.rating.toFixed(1)}
+                      </span>
+                    </div>
+                    <span className="text-caption text-text-secondary">
+                      ({stationDetails.reviews.toLocaleString()} đánh giá)
+                    </span>
+                  </div>
+                )}
+
                 <div className="flex flex-wrap gap-3">
                   <Badge variant="filled" className="bg-blue-500 text-white">
                     <Icon name="navigation" size={14} />

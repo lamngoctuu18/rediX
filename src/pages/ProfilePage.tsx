@@ -68,10 +68,12 @@ const ProfilePage: React.FC = () => {
         {!isEditing && (
           <Button 
             variant="secondary" 
+            size="sm"
             onClick={() => setIsEditing(true)}
+            className="gap-1.5"
           >
-            <Icon name="edit" size={18} />
-            Chỉnh sửa
+            <Icon name="edit" size={16} />
+            <span className="hidden sm:inline">Chỉnh sửa</span>
           </Button>
         )}
       </div>

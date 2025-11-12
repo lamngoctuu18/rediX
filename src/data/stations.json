@@ -17,7 +17,11 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1243,
-      "image": "/images/stations/station-1.jpg",
+      "images": [
+        "/hohoankiem1.jpg",
+        "/hohoankiem2.jpeg",
+        "/hohoankiem3.jpg"
+      ],
       "description": "Trạm thuê xe gần Hồ Hoàn Kiếm, trung tâm Hà Nội",
       "contact": {
         "phone": "024-1234-5678",
@@ -47,7 +51,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 987,
-      "image": "/images/stations/station-2.jpg",
+      "images": ["/phoco1.jpg", "/phoco2.jpg", "/phoco3.jpg"],
       "description": "Trạm thuê xe tại Phố Cổ, khám phá văn hóa Hà Nội",
       "contact": {
         "phone": "024-2345-6789",
@@ -77,7 +81,7 @@
       "status": "active",
       "rating": 4.9,
       "reviews": 2156,
-      "image": "/images/stations/station-3.jpg",
+      "images": ["/nhahatlon1.jpg", "/nhahatlon2.jpg", "/nhahatlon3.jpg"],
       "description": "Trạm thuê xe cao cấp tại Nhà Hát Lớn, trung tâm văn hóa Hà Nội",
       "contact": {
         "phone": "024-3456-7890",
@@ -107,7 +111,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1876,
-      "image": "/images/stations/station-4.jpg",
+      "images": ["/chodongxuan1.jpg", "/chodongxuan2.jpg", "/chodongxuan3.jpg"],
       "description": "Trạm thuê xe tại chợ Đồng Xuân, khu mua sắm sầm uất",
       "contact": {
         "phone": "024-4567-8901",
@@ -137,7 +141,7 @@
       "status": "active",
       "rating": 4.6,
       "reviews": 1432,
-      "image": "/images/stations/station-5.jpg",
+      "images": ["/vanmieu1.jpg", "/vanmieu2.jpg", "/vanmieu3.jpg"],
       "description": "Trạm thuê xe gần Văn Miếu, di tích lịch sử nổi tiếng",
       "contact": {
         "phone": "024-5678-9012",
@@ -167,7 +171,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 892,
-      "image": "/images/stations/station-6.jpg",
+      "images": ["/daihocquocgiahanoi1.jpg", "/daihocquocgiahanoi2.jpg", "/dạihocquocgiahanoi3.jpg"],
       "description": "Trạm thuê xe tại Đại học Quốc Gia, phục vụ cộng đồng sinh viên",
       "contact": {
         "phone": "024-6789-0123",
@@ -197,7 +201,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1098,
-      "image": "/images/stations/station-7.jpg",
+      "images": ["/congvienthongnhat1.jpeg", "/congvienthongnhat2.jpg", "/congvienthongnhat3.jpg"],
       "description": "Trạm thuê xe tại công viên Thống Nhất, không gian xanh rộng lớn",
       "contact": {
         "phone": "024-7890-1234",
@@ -227,7 +231,7 @@
       "status": "active",
       "rating": 4.9,
       "reviews": 2543,
-      "image": "/images/stations/station-8.jpg",
+      "images": ["/lottecenter1.png", "/lottecenter2.jpg", "/lottecenter3.jpg"],
       "description": "Trạm thuê xe cao cấp tại Lotte Center, phục vụ doanh nhân",
       "contact": {
         "phone": "024-8901-2345",
@@ -257,7 +261,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1654,
-      "image": "/images/stations/station-9.jpg",
+      "images": ["/timecity1.jpg", "/timecity2.jpg", "/timecity3.jpg"],
       "description": "Trạm thuê xe tại Times City, khu đô thị hiện đại",
       "contact": {
         "phone": "024-9012-3456",
@@ -287,7 +291,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 1789,
-      "image": "/images/stations/station-10.jpg",
+      "images": ["/vincommega1.jpg", "/vincommega2.jpg", "/vincommega3.jpg"],
       "description": "Trạm thuê xe tại Royal City, trung tâm mua sắm lớn",
       "contact": {
         "phone": "024-0123-4567",
@@ -317,7 +321,7 @@
       "status": "active",
       "rating": 4.9,
       "reviews": 2234,
-      "image": "/images/stations/station-11.jpg",
+      "images": ["/hotay1.jpg", "/hotay2.jpeg", "/hotay3.jpg"],
       "description": "Trạm thuê xe ven Hồ Tây, cảnh quan đẹp",
       "contact": {
         "phone": "024-1234-6789",
@@ -347,7 +351,7 @@
       "status": "active",
       "rating": 4.6,
       "reviews": 876,
-      "image": "/images/stations/station-12.jpg",
+      "images": ["/baotangHoChiMinh.jpg", "/baotangHoChiMinh2.jpg", "/baotangHoChiMinh3.jpeg"],
       "description": "Trạm thuê xe gần Bảo tàng Hồ Chí Minh, khu di tích lịch sử",
       "contact": {
         "phone": "024-2345-7890",
@@ -377,7 +381,7 @@
       "status": "active",
       "rating": 4.9,
       "reviews": 1923,
-      "image": "/images/stations/station-15.jpg",
+      "images": ["/landmark1.jpg", "/landmark2.jpg", "/landmark3.jpg"],
       "description": "Trạm thuê xe tại Keangnam, tòa nhà cao nhất Hà Nội",
       "contact": {
         "phone": "024-5678-0123",
@@ -407,7 +411,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1267,
-      "image": "/images/stations/station-14.jpg",
+      "images": ["/congviengiadinh1.jpg", "/congviengiadinh2.jpg", "/congviengiadinh3.jpg"],
       "description": "Trạm thuê xe tại công viên Gia Định, không gian yên tĩnh và thoáng mát",
       "contact": {
         "phone": "028-4567-9012",
@@ -437,7 +441,7 @@
       "status": "active",
       "rating": 4.5,
       "reviews": 678,
-      "image": "/images/stations/station-15.jpg",
+      "images": ["/chotandinh1.jpg", "/chotandinh2.jpg", "/chotandinh3.jpg"],
       "description": "Trạm thuê xe gần chợ Tân Định, thuận tiện mua sắm",
       "contact": {
         "phone": "028-5678-0123",
@@ -467,7 +471,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 1456,
-      "image": "/images/stations/station-16.jpg",
+      "images": ["/vincombatrieu1.jpeg", "/vincombatrieu2.jpg", "/vincombatrieu3.jpg"],
       "description": "Trạm thuê xe tại Vincom Bà Triệu, mua sắm tiện lợi",
       "contact": {
         "phone": "024-6789-1234",
@@ -497,7 +501,7 @@
       "status": "active",
       "rating": 4.5,
       "reviews": 945,
-      "image": "/images/stations/station-17.jpg",
+      "images": ["/benhvienbachmai1.jpg", "/benhvienbachmai2.jpg", "/benhvienbachmai3.jpg"],
       "description": "Trạm thuê xe gần Bệnh viện Bạch Mai, phục vụ bệnh nhân",
       "contact": {
         "phone": "024-7890-2345",
@@ -527,7 +531,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 2098,
-      "image": "/images/stations/station-18.jpg",
+      "images": ["/gahanoi1.jpg", "/gahanoi2.jpg", "/gahanoi3.jpg"],
       "description": "Trạm thuê xe tại Ga Hà Nội, kết nối đường sắt",
       "contact": {
         "phone": "024-8901-3456",
@@ -557,7 +561,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 1123,
-      "image": "/images/stations/station-19.jpg",
+      "images": ["/sanvandongmydinh1.jpg", "/sanvandongmydinh2.jpg", "/sanvandongmydinh3.jpg"],
       "description": "Trạm thuê xe tại Sân vận động Mỹ Đình, phục vụ sự kiện thể thao",
       "contact": {
         "phone": "024-9012-4567",
@@ -587,7 +591,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 1234,
-      "image": "/images/stations/station-13.jpg",
+      "images": ["/caulongbien1.jpg", "/caulongbien2.jpg", "/caulongbien3.jpg"],
       "description": "Trạm thuê xe gần Cầu Long Biên, di sản văn hóa",
       "contact": {
         "phone": "024-3456-8901",
@@ -617,7 +621,7 @@
       "status": "active",
       "rating": 4.7,
       "reviews": 756,
-      "image": "/images/stations/station-21.jpg",
+      "images": ["/daihocdainam1.jpg", "/daihocdainam2.jpg", "/daihocdainam3.jpg"],
       "description": "Trạm thuê xe tại Đại học Đại Nam, phục vụ sinh viên và giảng viên",
       "contact": {
         "phone": "024-1111-2222",
@@ -647,7 +651,7 @@
       "status": "active",
       "rating": 4.8,
       "reviews": 1234,
-      "image": "/images/stations/station-20.jpg",
+      "images": ["/congviencaugiay1.jpg", "/congviencaugiay2.jpg", "/congviencaugiay3.png"],
       "description": "Trạm thuê xe tại công viên Cầu Giấy, không gian xanh đẹp",
       "contact": {
         "phone": "024-0123-5678",

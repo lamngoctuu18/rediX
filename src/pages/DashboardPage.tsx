@@ -23,7 +23,7 @@ interface Station {
   status: string;
   rating: number;
   reviews: number;
-  image: string;
+  images: string[];
   description: string;
   contact: {
     phone: string;
@@ -54,6 +54,7 @@ const DashboardPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
+  const [stationImageIndexes, setStationImageIndexes] = useState<{[key: string]: number}>({});
 
   // Get all stations for search suggestions
   const allStations = stationsData.stations as Station[];
@@ -468,6 +469,21 @@ const DashboardPage: React.FC = () => {
                     <p className="text-caption text-text-secondary mb-2 line-clamp-1">
                       {station.address}
                     </p>
+                    
+                    {/* Rating Display */}
+                    {station.rating && station.reviews && (
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="flex items-center gap-1">
+                          <Icon name="star" size={14} className="text-yellow-500 fill-yellow-500" />
+                          <span className="text-caption font-bold text-primary">
+                            {station.rating.toFixed(1)}
+                          </span>
+                        </div>
+                        <span className="text-xs text-text-secondary">
+                          ({station.reviews.toLocaleString()} đánh giá)
+                        </span>
+                      </div>
+                    )}
                     
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-caption text-text-secondary">
                       <span className="flex items-center gap-1.5 bg-blue-50 px-2 py-1 rounded-lg">
