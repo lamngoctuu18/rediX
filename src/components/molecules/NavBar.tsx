@@ -150,14 +150,6 @@ const NavBar: React.FC<NavBarProps> = ({ variant = 'header', className = '' }) =
           <Link to="/profile" className="flex items-center gap-2 hover:bg-primary-8 px-3 py-2 rounded-button transition-colors duration-200">
             <Avatar name={user?.profile.name} size="sm" />
           </Link>
-          
-          <button
-            onClick={logout}
-            className="p-2 text-text-secondary hover:text-primary hover:bg-primary-8 rounded-button transition-colors duration-200"
-            aria-label="Đăng xuất"
-          >
-            <Icon name="chevronLeft" size={20} />
-          </button>
         </div>
       </div>
     </header>

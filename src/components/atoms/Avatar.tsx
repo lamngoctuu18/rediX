@@ -16,10 +16,10 @@ const Avatar: React.FC<AvatarProps> = ({
   className = ''
 }) => {
   const sizeClasses = {
-    sm: 'w-8 h-8 text-caption',
-    md: 'w-10 h-10 text-body',
-    lg: 'w-12 h-12 text-body-lg',
-    xl: 'w-16 h-16 text-h2'
+    sm: 'w-10 h-10 text-body',
+    md: 'w-14 h-14 text-body-lg',
+    lg: 'w-16 h-16 text-h2',
+    xl: 'w-24 h-24 text-h1-lg'
   };
 
   const getInitials = (name: string): string => {

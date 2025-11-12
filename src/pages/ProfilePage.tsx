@@ -41,7 +41,10 @@ const ProfilePage: React.FC = () => {
     if (window.confirm('Bạn có chắc chắn muốn đăng xuất?')) {
       logout();
       showToast('Đã đăng xuất thành công', 'success');
-      navigate('/');
+      // Đợi một chút để logout hoàn tất trước khi navigate
+      setTimeout(() => {
+        navigate('/', { replace: true });
+      }, 100);
     }
   };
 
