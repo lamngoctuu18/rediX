@@ -1,0 +1,1 @@
+export { RentSummaryPage as default } from './PlaceholderPages';

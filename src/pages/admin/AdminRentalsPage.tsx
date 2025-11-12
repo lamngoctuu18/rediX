@@ -1,0 +1,1 @@
+export { AdminRentalsPage as default } from '../PlaceholderPages';

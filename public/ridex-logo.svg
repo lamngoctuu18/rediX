@@ -1,0 +1,42 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Q Circle with gradient -->
+  <defs>
+    <linearGradient id="qGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00E676;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Green curved part (left arc) -->
+  <path d="M 25 20 Q 15 20 15 30 Q 15 50 25 50 L 35 50" 
+        stroke="url(#qGradient)" 
+        stroke-width="8" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- Q letter (circle part) -->
+  <circle cx="45" cy="35" r="20" 
+          stroke="#1A237E" 
+          stroke-width="6" 
+          fill="none"/>
+  
+  <!-- Q tail -->
+  <path d="M 58 48 L 68 58" 
+        stroke="#1A237E" 
+        stroke-width="6" 
+        stroke-linecap="round"/>
+  
+  <!-- RIDE text -->
+  <text x="80" y="45" 
+        font-family="'Inter', 'Arial', sans-serif" 
+        font-size="32" 
+        font-weight="700" 
+        fill="#1A237E">RIDE</text>
+  
+  <!-- X text in green -->
+  <text x="165" y="45" 
+        font-family="'Inter', 'Arial', sans-serif" 
+        font-size="32" 
+        font-weight="700" 
+        fill="#00C853">X</text>
+</svg>

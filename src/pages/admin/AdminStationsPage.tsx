@@ -1,0 +1,1 @@
+export { AdminStationsPage as default } from '../PlaceholderPages';

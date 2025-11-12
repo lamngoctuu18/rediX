@@ -1,0 +1,26 @@
+{
+  "accounts": [
+    {
+      "type": "user",
+      "identifier": "user@demo",
+      "phone": "0123456789",
+      "cccd": "001234567890",
+      "password": "123456",
+      "name": "Nguyễn Văn A",
+      "description": "Tài khoản người dùng thông thường"
+    },
+    {
+      "type": "admin",
+      "identifier": "admin@demo",
+      "phone": "0987654321",
+      "cccd": "009876543210",
+      "password": "admin123",
+      "name": "Quản Trị Viên",
+      "description": "Tài khoản quản trị viên hệ thống"
+    }
+  ],
+  "instructions": {
+    "vi": "Bạn có thể đăng nhập bằng số điện thoại, CCCD hoặc identifier ở trên",
+    "en": "You can login with phone number, CCCD or identifier above"
+  }
+}

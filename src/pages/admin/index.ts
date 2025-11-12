@@ -1,0 +1,1 @@
+export { AdminStationsPage, AdminBikesPage, AdminRentalsPage, AdminAnalyticsPage, AdminSupportPage } from '../PlaceholderPages';

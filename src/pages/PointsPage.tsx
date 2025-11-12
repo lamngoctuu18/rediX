@@ -1,0 +1,1 @@
+export { PointsPage as default } from './PlaceholderPages';

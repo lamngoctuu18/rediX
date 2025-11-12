@@ -1,0 +1,1 @@
+export { AdminBikesPage as default } from '../PlaceholderPages';
